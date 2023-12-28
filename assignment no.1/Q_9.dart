@@ -1,21 +1,3 @@
-
-// Class: 9 
-
-// Subject-wise Marks: 
-
-// Mathematics: 85 / 100 
-// English: 78 / 100 
-// Science: 92 / 100 
-// History: 88 / 100 
-// Computer: 95 / 100 
-
-// Total Marks: 500 
-
-// Obtained Marks: 438 
-
-// Percentage: 87.60%
-
-
 // Q9: Check if the number is even or odd, If number is even then check if this is 
 // divisible by 5 or not & if number is odd then check if this is divisible by 7 or not.
 
