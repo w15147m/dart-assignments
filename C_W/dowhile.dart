@@ -4,7 +4,6 @@ void main(){
   do{
     
     print("play game");
-    
-  }while(loop);
+      }while(loop);
   
 }
