@@ -8,6 +8,7 @@ void main() {
        print(day);
   }
 }
+
 // out put
 
           // [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
