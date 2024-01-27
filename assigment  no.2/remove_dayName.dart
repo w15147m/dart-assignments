@@ -11,3 +11,14 @@ void main() {
   }
 
 }
+
+
+// out put
+
+          // [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+          // [Monday, Tuesday, Wednesday, Thursday, Friday]
+          // [Monday, Tuesday, Wednesday, Thursday]
+          // [Monday, Tuesday, Wednesday]
+          // [Monday, Tuesday]
+          // [Monday]
+          // []
