@@ -4,7 +4,23 @@
 void main() {
    List<String> day_names = [] ;
       day_names.addAll( ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]);
-     print(day_names);
-}
+        var day;
 
-     
+
+        // asMap() use for indexing
+
+       day_names.asMap().forEach((index, day) {
+    print("Day ${index + 1}: $day");
+  });
+    
+   }
+
+// out put
+                    // Day 1: Monday
+                    // Day 2: Tuesday
+                    // Day 3: Wednesday
+                    // Day 4: Thursday
+                    // Day 5: Friday
+                    // Day 6: Saturday
+                    // Day 7: Sunday
+
