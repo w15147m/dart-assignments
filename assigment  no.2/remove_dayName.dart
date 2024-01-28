@@ -11,8 +11,6 @@ void main() {
   }
 
 }
-
-
 // out put
 
           // [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
