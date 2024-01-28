@@ -2,7 +2,6 @@
 // number from a list.
 
 void main() {
-        
    List numbers= [5, 2, 3, 8, 17, 11];
    print(numbers);
    print("");
