@@ -4,7 +4,6 @@ firstFunction(number);
 table(3);
 
 }
-
 firstFunction(number){
    var conter = 0 ;
    var conter1 = 0;
@@ -17,7 +16,6 @@ for (var i = 0; i < number.length; i++) {
 }  
 print( "positive numbers: $conter");
 print( "nagitive numbers: $conter1");
-
 
 }
 
