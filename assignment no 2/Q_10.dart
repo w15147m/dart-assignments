@@ -13,44 +13,34 @@ void main() {
     'jar'
   ];
 
-  print(stringsWithDuplicates);
+  print("stringsWithDuplicates: $stringsWithDuplicates");
 
-
-  // for (var i = 0; i < stringsWithDuplicates.length; i++) {
-  //   for (var a = i + 1; a < stringsWithDuplicates.length; a++) {
-  //     if (stringsWithDuplicates[i] == stringsWithDuplicates[a]) {
-
-  //        stringsWithDuplicates.remove(stringsWithDuplicates[a]);
-  //        stringsWithDuplicates.remove(stringsWithDuplicates[i]);
-
-  //     }
-  //   }
-  // }
-  // print(stringsWithDuplicates);
-
-Set<String> uniqueStrings = {};
-List<String> duplicatesToRemove = [];
-List<String> uniqueToprint = [];
-for (var str in stringsWithDuplicates) {
-  // Check if the element is already in the set
-  if (!uniqueStrings.add(str)) {
-  duplicatesToRemove.add(str);
-
-  }else{
-  uniqueToprint.add(str);
-
+  Set<String> uniqueStrings = {};
+  List<String> duplicatesToRemove = [];
+  for (var str in stringsWithDuplicates) {
+    // Check if the element is already in the set
+    if (!uniqueStrings.add(str)) {
+      duplicatesToRemove.add(str);
+      //
+    }
   }
-}
-   print("duplicatesToRemove: $uniqueToprint");
-   print("uniqueToprint: $uniqueToprint");
+  for (var str1 in duplicatesToRemove) {
+  for (var str2 in duplicatesToRemove) {
+    stringsWithDuplicates.remove(str1);
+    stringsWithDuplicates.remove(str2);
+  }
+  }
+
+  print("duplicates To Remove: $duplicatesToRemove");
+  print("strings after Duplicates: $stringsWithDuplicates");
 }
 
 // out put
 
-        // [apple, orange, banana, apple, cat, orange, jar]
-       
-        // duplicatesToRemove:
-        //        [apple, orange, banana, cat, jar]
+// [apple, orange, banana, apple, cat, orange, jar]
 
-        // uniqueToprint:
-        //        [apple, orange, banana, cat, jar]
+// duplicatesToRemove:
+//        [apple, orange, banana, cat, jar]
+
+// uniqueToprint:
+//        [apple, orange, banana, cat, jar]

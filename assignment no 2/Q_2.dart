@@ -3,7 +3,6 @@
 void main() {
    List<String> day_names = [] ;
       day_names.addAll( ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]);
-        var day;
         // asMap() use for indexing
        day_names.asMap().forEach((index, day) {
     print("Day ${index + 1}: $day");
