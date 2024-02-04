@@ -37,10 +37,6 @@ void main() {
 
 // out put
 
-// [apple, orange, banana, apple, cat, orange, jar]
-
-// duplicatesToRemove:
-//        [apple, orange, banana, cat, jar]
-
-// uniqueToprint:
-//        [apple, orange, banana, cat, jar]
+// stringsWithDuplicates: [apple, orange, banana, cat, orange, jar]
+// duplicates To Remove: [orange]
+// strings after Duplicates: [apple, banana, cat, jar]
