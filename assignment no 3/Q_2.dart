@@ -1,13 +1,21 @@
-// Q.2: Create an empty list of type string called days. Use the add method to add 
-// names of 7 days and print all days.
+// Q.2: Write a program that prints the Fibonacci sequence up to a given
+// number using a for loop.
 void main() {
-   List<String> day_names = [] ;
-      day_names.addAll( ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]);
-        // asMap() use for indexing
-       day_names.asMap().forEach((index, day) {
-    print("Day ${index + 1}: $day");
-  });
-   }
+  int limit = 10;
+  int first = 0;
+  int second = 1;
+  int next;
+
+ for (var i = 0; first <= limit; i++) {
+
+    next = first + second;
+      first = second;
+      second = next;
+   print("Fibonacci sequence $next");
+ }
+
+
+}
 
    
 // out put
