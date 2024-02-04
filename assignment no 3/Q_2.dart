@@ -4,10 +4,8 @@ void main() {
   int limit = 10;
   int first = 0;
   int second = 1;
-  int next;
-
- for (var i = 0; first <= limit; i++) {
-
+  int next = 0;
+ for (var i = 0; next <= limit; i++) {     
     next = first + second;
       first = second;
       second = next;

@@ -1,12 +1,33 @@
 
-// Q.3: Create a list of Days and remove one by one from the end of list.
+// Q.3: Implement a code that checks whether a given number is prime or not.
+
 void main() {
-   List<String> day =  ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] ;
-        
-  for (var i = day.length-1;  i>= 0 ; i= i-1){
-        day.removeAt(day.length - 1);
-       print(day);
-  }
+  int checkPrime = 43;
+  
+ if (checkPrime <= 1) {
+    print("Not a prime");
+  } else {
+    bool isPrime = true;
+    
+    for (var i = 2; i <= checkPrime / 2; i++) {
+      if (checkPrime % i == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    if (isPrime) {
+    print("prime");
+      
+    }else{
+    print("Not a prime");
+
+
+
+    }
+
+
+    }
+    
 }
 
 
