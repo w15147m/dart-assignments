@@ -1,31 +1,15 @@
-// Q.4: Create a list of numbers & write a program to get the smallest & greatest 
-// number from a list.
-
+// Q.4: Implement a code that finds the factorial of a number using a while
+// loop or for loop.
 void main() {
-        
-   List numbers= [5, 2, 3, 8, 17, 11];
-   print(numbers);
-   print("");
-   numbers.sort();
-   print(numbers);
-   print("");
-   var smallest = numbers.first;
-   var greatest = numbers.last;
-   print("smallest number : $smallest");
-   print("");
-   print("greatest number : $greatest");
-  
-    
+    int num = 6;
+    int factorial = 1;
+    for (var i = 1; i <= num; i++) {
+         factorial = factorial * i ; 
+    }
+    print("factorial : $factorial");
 }
 
-
 // out put
-          // [5, 2, 3, 8, 17, 11]
-
-          // [2, 3, 5, 8, 11, 17]
-
-          // smallest number : 2
-
-          // greatest number : 17
+          // factorial : 720
      
 
