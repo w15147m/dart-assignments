@@ -1,26 +1,31 @@
+// Q.2: Write a program that prints the Fibonacci sequence up to a given
+// number using a for loop.
 void main() {
-//   Q.5: Create a map with name, phone keys and store some values to it. Use
-// where to find all keys that have length 4.
+  int number = 123456;
+ int sum = 0;
+  List<int> digits = splitDigits(number);
+
+  for (var element in digits) {
+    sum = sum + element;
+    
+  }
+  print('sum of $number are: $sum');
 
 
-  Map<String, String> phonebook = {
-    "Ali": "1234567890",
-    "Ahmed": "9876543210",
-    "Sara": "8765432109",
-    "Zain": "2345678901"
-  };
-
-List<String> keysWithLength4 = phonebook.keys.where((key) => key.length == 4).toList();
-
-
-  print("Length 4 ki keys: $keysWithLength4");
 }
 
+List<int> splitDigits(int n) {
+  List<int> digits = [];
+  
+  while (n > 0) {
+    digits.add(n % 10);
+    n ~/= 10; // Integer division to remove the last digit
+  }
+
+  return digits.reversed.toList();
+}
+
+   
 // out put
-// Length 4 ki keys: [Sara, Zain]
+                    // sum of 123456 are: 21
 
-// [2, 3, 5, 8, 11, 17]
-
-// smallest number : 2
-
-// greatest number : 17
