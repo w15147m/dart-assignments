@@ -18,7 +18,6 @@ void main() {
   Set<String> uniqueStrings = {};
   List<String> duplicatesToRemove = [];
   for (var str in stringsWithDuplicates) {
-    // Check if the element is already in the set
     if (!uniqueStrings.add(str)) {
       duplicatesToRemove.add(str);
       //
