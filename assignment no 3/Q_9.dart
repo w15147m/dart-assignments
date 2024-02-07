@@ -1,17 +1,21 @@
 void main() {
-// Q.9: Given a list of integers, write a dart code that returns the maximum value 
-// from the list.
+// Q.9: mplement a function that checks if a given string is a palindrome.
 
-  List<int> numbers = [12, 5, 8, 15, 7];
-   numbers.sort();
-   print(numbers.last);
-   
-   
+  String checkPalindrome = "wasitcaroracatisaw";
 
+ String chicek =   functionCheck(checkPalindrome);
+  print(chicek);
+}
+
+functionCheck(checkPalindrome) {
+  List<String> splitted = checkPalindrome.split('');
+  List<String> reversed = splitted.reversed.toList();
+  String checkedPalindrome = reversed.join('');
+  return (checkedPalindrome);
 }
 
 // out put
-        
+        // wasitacaroractisaw
 
 
 
