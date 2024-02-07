@@ -1,10 +1,12 @@
 void main() {
 // Q.9: mplement a function that checks if a given string is a palindrome.
-
   String checkPalindrome = "wasitcaroracatisaw";
-
  String chicek =   functionCheck(checkPalindrome);
-  print(chicek);
+ if (checkPalindrome == chicek) {
+   print("$chicek is palindrome" );
+ }else{
+   print("$chicek is not palindrome" );
+ }
 }
 
 functionCheck(checkPalindrome) {

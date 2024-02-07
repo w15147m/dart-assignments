@@ -1,0 +1,21 @@
+<script>
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+ var twoSum = function (nums, target) {
+    var add=[];
+    for(i=0;i<nums.length-1;i++)
+    {
+        if(nums[i]+nums[i+1]==target)
+        {
+            add.push(i);
+            add.push(i+1);
+        }
+    }
+    return add;
+};
+nums = [2,7,11,15], target = 9;
+console.log(twoSum(nums,target));
+</script>
