@@ -5,13 +5,15 @@ void main() {
   int first = 0;
   int second = 1;
   int next = 0;
+   print("Fibonacci sequence");
+
  for (var i = 0; next <= limit; i++) {     
     next = first + second;
       first = second;
       second = next;
-   print("Fibonacci sequence $next");
- }
+   print(next);
 
+ }
 
 }
 

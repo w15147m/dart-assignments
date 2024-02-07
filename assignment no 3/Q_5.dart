@@ -1,5 +1,5 @@
-// Q.2: Write a program that prints the Fibonacci sequence up to a given
-// number using a for loop.
+// Q.2: Write a program that calculates the sum of all the digits in a given
+// number using a while loop.
 void main() {
   int number = 123456;
  int sum = 0;
