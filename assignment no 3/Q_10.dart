@@ -1,41 +1,29 @@
+import 'dart:math';
 void main() {
-// Q.10: Write a Dart code that takes in a list of strings and removes any duplicate
-// elements, returning a new list without duplicates. The order of elements in the
-// new list should be the same as in the original list.
+// Q.10:Write a program to display the cube of the number up to an integer.
+// Test Data :
+// Input number of terms : 5
+// Expected Output :
+// Number is : 1 and cube of the 1 is :1
+// Number is : 2 and cube of the 2 is :8
+// Number is : 3 and cube of the 3 is :27
+// Number is : 4 and cube of the 4 is :64
+// Number is : 5 and cube of the 5 is :125
+ 
+var input = 5;
 
-  List<String> stringsWithDuplicates = [
-    'apple',
-    'orange',
-    'banana',
-    'apple',
-    'cat',
-    'orange',
-    'jar'
-  ];
+for (var i = 1; i <= 5; i++) {
+  var cube = pow(i, 3);
+   print('Number is : $i and cube of the 1 is : $cube');
+}
 
-  print("stringsWithDuplicates: $stringsWithDuplicates");
 
-  Set<String> uniqueStrings = {};
-  List<String> duplicatesToRemove = [];
-  for (var str in stringsWithDuplicates) {
-    if (!uniqueStrings.add(str)) {
-      duplicatesToRemove.add(str);
-      //
-    }
-  }
-  for (var str1 in duplicatesToRemove) {
-  for (var str2 in duplicatesToRemove) {
-    stringsWithDuplicates.remove(str1);
-    stringsWithDuplicates.remove(str2);
-  }
-  }
-
-  print("duplicates To Remove: $duplicatesToRemove");
-  print("strings after Duplicates: $stringsWithDuplicates");
 }
 
 // out put
 
-// stringsWithDuplicates: [apple, orange, banana, cat, orange, jar]
-// duplicates To Remove: [orange]
-// strings after Duplicates: [apple, banana, cat, jar]
+// Number is : 1 and cube of the 1 is : 1
+// Number is : 2 and cube of the 1 is : 8
+// Number is : 3 and cube of the 1 is : 27
+// Number is : 4 and cube of the 1 is : 64
+// Number is : 5 and cube of the 1 is : 125
