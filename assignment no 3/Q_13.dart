@@ -8,14 +8,15 @@ void main() {
 //  4444
 
   for (var i = 1; i < 5; i++) {
-    for (var j = 0; j < i; j++) {
-      print(i);
+          String num = i.toString();
+       String total =  num * (i);
+      print(total);
     }
     print(''); 
   }
 
 
-}
+
 
 // out put
 
