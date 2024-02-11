@@ -1,39 +1,19 @@
 void main() {
 
-// Q.20: Create a map named "car" with the following key-value pairs: "brand" as 
-// "Toyota", "color" as "Red", "isSedan" as true. Write Dart code to check if the 
-// car is a sedan and red in color. Print "Match" if both conditions are true, 
-// otherwise print "No match".
+// Q.20:Write a program that counts the number of vowels (a, e, i, o, and u,)in a given string
+// using a for loop and if-else condition.
 
-
-
-   // Creating a map named "person"
-     Map<String, dynamic> car = {
-    "brand": "Toyota",
-    "color": "Red",
-    "isSedan": true,
-  };
-
-  // Printing the "person" map
-  print("Product Map: $car");
-
-
- String carMap = checkCar(car);
-
-  print("car is: $carMap");
-
-
+String str = 'iasdf';
+List vowels = ['a', 'e', 'i', 'o', 'u',];
+int counts = 0;
+for (var i = 0; i < str.length; i++) {
+for (var a = 0; a < vowels.length; a++) {
+  if (str[i] == vowels[a]){
+        counts++;
+  }
+  }
 }
-
-checkCar(car) {
-
-    if(car['color'] == 'Red'&&  car['isSedan'] == true ){
-       return "Match";
-    }else{
-       return "No match";
-
-    }
-  
+print(counts);
 }
 // out put
 
