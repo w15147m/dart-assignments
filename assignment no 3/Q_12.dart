@@ -1,20 +1,21 @@
 void main() {
-// Q.12: Write a Dart code that takes in a list of strings and prints a new list with
-// the elements in reverse order. The original list should remain unchanged.
-
-  List<String> listofStrings = [
-    "Hello",
-    "World",
-    "Dart",
-    "World",
-    "Dart",
-    "Code"
-  ];
-  print("list of Strings: $listofStrings");
-  List<String> reverseOrder = listofStrings.reversed.toList();
-  print("");
-  print("reverse Order: $reverseOrder");
-}
+// Q.12:Write a program to display a pattern like a right angle triangle with a
+// number using loop.
+// The pattern like :
+// 1
+// 12
+// 123
+// 1234
+   for (var i = 1; i <= 5; i++) {
+    for (var j = 1; j < i; j++) {
+      print(j);
+    }
+    print(''); 
+  }
+  
+  
+  
+  }
 
 // out put
 
