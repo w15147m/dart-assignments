@@ -1,37 +1,27 @@
+import 'dart:io';
 void main() {
 
-// Q.19: Given a map representing a product with keys "name", "price", and 
-// "quantity", write Dart code to check if the product is in stock. If the quantity is 
-// greater than 0, print "In stock", otherwise print "Out of stock".
+// Q.19: Write a program that takes a list of numbers as input and prints the
+// numbers greater than 5 using a for loop and if-else condition.
+   
+  List<int> numbers = [];
+  List<int> greater = [];
+  List<int> less = [];
 
-
-   // Creating a map named "person"
-   Map<String, dynamic> product = {
-    "name": "Sample Product",
-    "price": 19.99,
-    "quantity": 0,
-  };
-
-  // Printing the "person" map
-  print("Product Map: $product");
-
-
- String productMap = checkStock(product);
-
-  print("product is: $productMap");
-
-
-}
-
-checkStock(numbers) {
-
-    if(  0 < numbers['quantity']){
-       return "In stock";
+  for (int i = 0; i < 5; i++) {
+     print('inter value:${i+1}');
+    String input = stdin.readLineSync()!;
+    int number = int.parse(input);
+    numbers.add(number);
+    if (number >  5) {
+      greater.add(number);
     }else{
-       return "Out of stock";
-
+     less.add(number);
     }
-  
+  }
+  print("List of numbers : $numbers ");
+  print("numbers greater than 5 : $greater ");
+  print("numbers less than 5 : $less ");
 }
 // out put
 

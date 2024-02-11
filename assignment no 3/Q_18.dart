@@ -5,7 +5,6 @@ void main() {
 // as "John", "age" as 25, "isStudent" as true. Write a Dart code to check if the
 // person is both a student and over 18 years old. Print "Eligible" if both
 // conditions are true, otherwise print "Not eligible".
-
   // Creating a map named "person"
   List user_credentials = [
     ["user1@example.com", "password1"],
@@ -29,7 +28,6 @@ void main() {
  if (!isLoggedIn) {
       print("Invalid credentials. Try again.");
  }
-
  
   }
 }
