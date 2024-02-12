@@ -13,37 +13,29 @@ void main() {
 
     print("Enter the third number: ");
     double num3 = double.parse(stdin.readLineSync()!);
-
-    // Finding the greatest number
     double greatest = findGreatest(num1, num2, num3);
-
-    // Finding the lowest number
     double lowest = findLowest(num1, num2, num3);
-
-    // Printing the results
     print("The greatest number is: $greatest");
     print("The lowest number is: $lowest");
 }
 
-// Function to find the greatest number among three
 double findGreatest(double a, double b, double c) {
     return (a > b) ? (a > c ? a : c) : (b > c ? b : c);
 }
 
-// Function to find the lowest number among three
 double findLowest(double a, double b, double c) {
     return (a < b) ? (a < c ? a : c) : (b < c ? b : c);
 }
 
 
 
-Enter the first number: 
-5
-Enter the second number: 
-6
-Enter the third number: 
-1
-The greatest number is: 6.0
-The lowest number is: 1.0
+// Enter the first number: 
+// 5
+// Enter the second number: 
+// 6
+// Enter the third number: 
+// 1
+// The greatest number is: 6.0
+// The lowest number is: 1.0
 
 

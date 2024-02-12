@@ -6,15 +6,13 @@ void main() {
 // 12
 // 123
 // 1234
-   for (var i = 1; i <= 5; i++) {
+  for (var i = 1; i <= 5; i++) {
+    String output = "";
     for (var j = 1; j < i; j++) {
-      print(j);
+      output += "$j "; 
     }
-    print(''); 
+    print(output); 
   }
-  
-  
-  
   }
 
 // out put
