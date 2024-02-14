@@ -5,7 +5,6 @@ void main() {
 // each student based on their average score (assuming maximum marks
 // for each subject is 100) and print the student's name along with their
 // grade.
-
   List<Map<String, dynamic>> studentDetails = [
     {
       'name': 'John',

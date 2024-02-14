@@ -9,9 +9,7 @@ void main() {
     if (number < 0) {
           a++;
            average += number; 
-          
     }
-
   }
  average  = average/a;
   print("average of all the negative numbers in a list: $average");
